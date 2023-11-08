@@ -11,22 +11,22 @@ const AboutPage = () => {
     <section className={styles.about}>
       <div className="container">
         <h2 className={`${styles.about__title} ${darkModeClass}`}>
-          О компании
+          Про компанію
         </h2>
         <div className={styles.about__inner}>
           <div className={`${styles.about__info} ${darkModeClass}`}>
             <p>
-              Компания &quot;АкваТермикс&quot; предлагает Вам запасные части для
-              европейских, корейских и отечественных газовых и электрических
-              котлов. 99% запчастей представленных на сайте постоянно
-              поддерживаются в наличии на нашем складе.
+              Компанія &quot;АкваТермікс&quot; пропонує Вам запасні частини для
+              європейських, корейських та вітчизняних газових та електричних
+              казанів. 99% запчастин представлених на сайті постійно
+              підтримуються у наявності на нашому складі.
             </p>
             <p>
-              Ассортимент интернет-магазина &quot;АкваТермикс&quot; включает в
-              себя запасные части для котлов Arderia, Ariston, Baxi, Beretta,
-              Bosch, Buderus, Chaffoteaux, De Dietrich, Demrad, Electrolux,
-              Ferroli, Fondital, Immergas, Junkers, Koreastar, Nova Florida,
-              Saunier Duval, Sime, Tiberis, Vaillant, Viessmann, Westen.
+              Асортимент інтернет-магазину &quot;АкваТермікс&quot; включає в
+              запасні частини для котлів Arderia, Ariston, Baxi, Beretta, Bosch,
+              Buderus, Chaffoteaux, De Dietrich, Demrad, Electrolux, Ferroli,
+              Fondital, Immergas, Junkers, Koreastar, Nova Florida, Saunier
+              Duval, Sime, Tiberis, Vaillant, Viessmann, Westen.
             </p>
           </div>
           <div className={`${styles.about__img} ${styles.about__img__top}`}>

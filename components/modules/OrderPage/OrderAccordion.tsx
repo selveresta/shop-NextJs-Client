@@ -44,7 +44,7 @@ const OrderAccordion = ({
               <DoneSvg />
             </span>
           )}
-          Корзина
+          Кошик
         </h3>
         <button
           className={styles.order__cart__title__btn}
@@ -85,7 +85,7 @@ const OrderAccordion = ({
                     <span
                       className={`${styles.order__cart__empty__text} ${darkModeClass}`}
                     >
-                      Корзина пуста
+                      Кошик пустий
                     </span>
                   </li>
                 )}
@@ -95,10 +95,10 @@ const OrderAccordion = ({
                   <span
                     className={`${styles.order__cart__footer__text} ${darkModeClass}`}
                   >
-                    Общая сумма заказа:
+                    Загальна сума замовлення:
                   </span>
                   <span className={styles.order__cart__footer__price}>
-                    {formatPrice(totalPrice)} P
+                    {formatPrice(totalPrice)} ₴
                   </span>
                 </div>
                 <button
@@ -106,7 +106,7 @@ const OrderAccordion = ({
                   onClick={closeAccordion}
                   disabled={!shoppingCart.length}
                 >
-                  Продолжить
+                  Продовжити
                 </button>
               </div>
             </div>

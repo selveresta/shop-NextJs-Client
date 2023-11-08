@@ -17,26 +17,30 @@ const CartAlert = ({ count, closeAlert }: ICartAlertProps) => {
     }
 
     if (count.endsWith('2') || count.endsWith('3') || count.endsWith('4')) {
-      return 'товара'
+      return 'товарів'
     }
 
-    return 'товаров'
+    return 'товарів'
   }
 
   return (
     <>
       <div className={`${styles.dashboard__alert__left} ${darkModeClass}`}>
         <span>
-          В корзине {count} {showCountMessage(`${count}`)}
+          В корзині {count} {showCountMessage(`${count}`)}
         </span>
-        <span>На сумму {formatPrice(totalPrice)} P</span>
+        <span>На суму {formatPrice(totalPrice)} ₴</span>
       </div>
       <div className={styles.dashboard__alert__right}>
         <Link href="/order" legacyBehavior passHref>
-          <a className={styles.dashboard__alert__btn_cart}>Перейти в корзину</a>
+          <a className={styles.dashboard__alert__btn_cart}>
+            Перейти до корзини
+          </a>
         </Link>
         <Link href="/order" legacyBehavior passHref>
-          <a className={styles.dashboard__alert__btn_order}>Оформить заказ</a>
+          <a className={styles.dashboard__alert__btn_order}>
+            Оформити замовлення
+          </a>
         </Link>
       </div>
       <button

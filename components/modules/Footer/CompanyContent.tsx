@@ -5,26 +5,28 @@ const CompanyContent = () => (
   <ul className={styles.footer__top__item__list}>
     <li className={styles.footer__top__item__list__item}>
       <Link href="/about" passHref legacyBehavior>
-        <a className={styles.footer__top__item__list__item__link}>О компании</a>
+        <a className={styles.footer__top__item__list__item__link}>
+          Про компанію
+        </a>
       </Link>
     </li>
     <li className={styles.footer__top__item__list__item}>
       <Link href="/contacts" passHref legacyBehavior>
         <a className={styles.footer__top__item__list__item__link}>
-          Обратная связь
+          Зворотній зв&apos;язок
         </a>
       </Link>
     </li>
     <li className={styles.footer__top__item__list__item}>
       <Link href="/wholesale-buyers" passHref legacyBehavior>
         <a className={styles.footer__top__item__list__item__link}>
-          Оптовым покупателям
+          Оптовим покупцям
         </a>
       </Link>
     </li>
     <li className={styles.footer__top__item__list__item}>
       <Link href="/contacts" passHref legacyBehavior>
-        <a className={styles.footer__top__item__list__item__link}>Контакты</a>
+        <a className={styles.footer__top__item__list__item__link}>Контакти</a>
       </Link>
     </li>
   </ul>

@@ -9,10 +9,10 @@ const EmailInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
       type="email"
       placeholder="ivan@gmail.com"
       {...register('email', {
-        required: 'Введите Email!',
+        required: 'Введіть Email!',
         pattern: {
           value: /\S+@\S+\.\S+/,
-          message: 'Неправильный Email!',
+          message: 'Неправильний Email!',
         },
       })}
     />

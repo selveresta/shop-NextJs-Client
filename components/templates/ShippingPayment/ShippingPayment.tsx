@@ -50,7 +50,7 @@ const ShippingPayment = () => {
     <section className={styles.shipping_payment}>
       <div className="container">
         <h2 className={`${styles.shipping_payment__title} ${darkModeClass}`}>
-          Доставка и оплата
+          Доставка і оплата
         </h2>
         <div className={`${styles.shipping_payment__tabs} ${darkModeClass}`}>
           <ul className={styles.shipping_payment__tabs__controls}>
@@ -60,7 +60,7 @@ const ShippingPayment = () => {
               } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab1}>
-                Как работает курьерская доставка?
+                Як працює кур&apos;єрська доставка?
               </button>
             </li>
             <li
@@ -69,7 +69,7 @@ const ShippingPayment = () => {
               } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab2}>
-                Как получить товар из пункта самовывоза?
+                Як отримати товар із пункту самовивезення?
               </button>
             </li>
             <li
@@ -78,7 +78,7 @@ const ShippingPayment = () => {
               } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab3}>
-                Какие способы оплаты?
+                Які засоби оплати?
               </button>
             </li>
             <li
@@ -87,7 +87,7 @@ const ShippingPayment = () => {
               } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab4}>
-                Как узнать статус заказанного товара?
+                Як дізнатися про статус замовленого товару?
               </button>
             </li>
           </ul>

@@ -36,7 +36,7 @@ const HeaderBottom = () => {
               <span
                 className={`${styles.header__logo__link__text} ${darkModeClass}`}
               >
-                Детали для газовых котлов
+                Деталі для газових котлів
               </span>
             </a>
           </Link>

@@ -88,13 +88,13 @@ const DashboardSlider = ({
                 Артикул: {item.vendor_code}
               </span>
               <span className={styles.dashboard__slide__price}>
-                {formatPrice(item.price)} P
+                {formatPrice(item.price)} ₴
               </span>
             </div>
           </div>
         ))
       ) : (
-        <span>Список товаров пуст....</span>
+        <span>Список товарів пустий....</span>
       )}
     </Slider>
   )

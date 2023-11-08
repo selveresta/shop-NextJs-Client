@@ -34,11 +34,11 @@ const FeedbackForm = () => {
       )
       .then((result) => {
         setSpinner(false)
-        toast.success(`Сообщение отправлено! ${result.text}`)
+        toast.success(`Повідомлення надісланно! ${result.text}`)
       })
       .catch((error) => {
         setSpinner(false)
-        toast.error(`Что-то пошло не так! ${error.text}`)
+        toast.error(`Щось пішло не так! ${error.text}`)
       })
 
     formRef.current.reset()
@@ -47,7 +47,7 @@ const FeedbackForm = () => {
   return (
     <div className={`${styles.feedback_form} ${darkModeClass}`}>
       <h3 className={`${styles.feedback_form__title} ${darkModeClass}`}>
-        Форма обратной связи
+        Форма зворотнього зв&apos;язку
       </h3>
       <form
         ref={formRef}
@@ -79,10 +79,10 @@ const FeedbackForm = () => {
             {spinner ? (
               <span
                 className={spinnerStyles.spinner}
-                style={{ top: '6px', left: '47%' }}
+                style={{ top: '4px', left: '47%' }}
               />
             ) : (
-              'Отправить сообщение'
+              'Надіслати повідомлення'
             )}
           </button>
         </div>

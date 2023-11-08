@@ -24,14 +24,14 @@ const Footer = () => {
               {!isMedia500 && (
                 <>
                   <h3 className={styles.footer__top__item__title}>
-                    Интернет-магазин
+                    Інтернет-магазин
                   </h3>
                   <OnlineStoreContent />
                 </>
               )}
               {isMedia500 && (
                 <Accordion
-                  title="Интернет-магазин"
+                  title="Інтернет-магазин"
                   titleClass={styles.footer__top__item__title}
                   arrowOpenClass={styles.open}
                 >
@@ -43,7 +43,7 @@ const Footer = () => {
             <div className={styles.footer__top__item}>
               {!isMedia500 && (
                 <>
-                  <h3 className={styles.footer__top__item__title}>Компания</h3>
+                  <h3 className={styles.footer__top__item__title}>Компанія</h3>
                   <CompanyContent />
                 </>
               )}
@@ -60,15 +60,15 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footer__top__item}>
-            <h3 className={styles.footer__top__item__title}>Контакты</h3>
+            <h3 className={styles.footer__top__item__title}>Контакти</h3>
             <ul
               className={`${styles.footer__top__item__list} ${styles.footer__top__item__contacts}`}
             >
               <li className={styles.footer__top__item__list__item}>
                 <Link href="/contacts" passHref legacyBehavior>
                   <a className={styles.footer__top__item__list__item__link}>
-                    <span>Наш адрес:</span>
-                    <span>г. Москва, ул. ... д....</span>
+                    <span>Наша адреса:</span>
+                    <span>г. Київ, вул. ... д....</span>
                     <span>
                       <MarkerSvg />
                     </span>
@@ -80,8 +80,8 @@ const Footer = () => {
                   href="tel:+780955555555"
                   className={styles.footer__top__item__list__item__link}
                 >
-                  <span>Наш контактный телефон:</span>
-                  <span>+7(8095) 555-55-55</span>
+                  <span>Наш контактний телефон:</span>
+                  <span>+380 68 702 8385</span>
                   <span>
                     <PhoneSvg />
                   </span>
@@ -93,7 +93,7 @@ const Footer = () => {
                   className={styles.footer__top__item__list__item__link}
                 >
                   <span>E-mail:</span>
-                  <span>info@zapchasti.com.ru</span>
+                  <span>info@zapchasti.com.ua</span>
                   <span>
                     <MailSvg />
                   </span>
@@ -106,7 +106,7 @@ const Footer = () => {
           <div className={styles.footer__bottom__block}>
             <div className={styles.footer__bottom__block__left}>
               <h3 className={styles.footer__bottom__block__title}>
-                Мы принимаем к оплате:
+                Ми приймаємо до оплати:
               </h3>
               <ul className={styles.footer__bottom__block__pay}>
                 <li className={styles.footer__bottom__block__pay__item}>
@@ -125,7 +125,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer__bottom__block__right}>
               <h3 className={styles.footer__bottom__block__title}>
-                Мы в соцсети:
+                Ми в соц-мережах:
               </h3>
               <ul className={styles.footer__bottom__block__social}>
                 <li className={styles.footer__bottom__block__social__item}>
@@ -158,7 +158,7 @@ const Footer = () => {
           {isMedia750 && <FooterLogo />}
           <div className={styles.footer__bottom__block}>
             <p className={styles.footer__bottom__block__copyright}>
-              © «Детали для газовых котлов» 2021.
+              © «Деталі для газових котлів» 2023.
             </p>
           </div>
         </div>

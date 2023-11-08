@@ -70,8 +70,8 @@ const CatalogFiltersMobile = ({
     >
       <div className={styles.catalog__bottom__filters__inner}>
         <FiltersPopupTop
-          resetBtnText="Сбросить все"
-          title="Фильтры"
+          resetBtnText="Скинути все"
+          title="Фільтри"
           resetFilters={resetFilters}
           resetFilterBtnDisabled={resetFilterBtnDisabled}
           closePopup={closePopup}
@@ -81,10 +81,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenBoilers}
           >
-            Производитель котлов
+            Виробник котлів
           </button>
           <FiltersPopup
-            title="Производитель котлов"
+            title="Виробник котлів"
             resetFilterBtnDisabled={!isAnyBoilerManufacturerChecked}
             updateManufacturer={updateBoilerManufacturer}
             setManufacturer={setBoilerManufacturers}
@@ -100,10 +100,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenParts}
           >
-            Производитель запчастей
+            Виробник запчастин
           </button>
           <FiltersPopup
-            title="Производитель запчастей"
+            title="Виробник запчастин"
             resetFilterBtnDisabled={!isAnyPartsManufacturerChecked}
             updateManufacturer={updatePartsManufacturer}
             setManufacturer={setPartsManufacturers}
@@ -116,7 +116,7 @@ const CatalogFiltersMobile = ({
         </div>
         <div className={styles.filters__price}>
           <Accordion
-            title="Цена"
+            title="Ціна"
             titleClass={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             hideArrowClass={styles.hide_arrow}
             isMobileForFilters={isMobile}
@@ -144,7 +144,7 @@ const CatalogFiltersMobile = ({
               style={{ top: 6, left: '47%' }}
             />
           ) : (
-            'Показать'
+            'Показати'
           )}
         </button>
       </div>

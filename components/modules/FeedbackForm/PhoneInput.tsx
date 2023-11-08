@@ -6,13 +6,13 @@ const PhoneInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
     <span>Телефон *</span>
     <input
       className={styles.feedback_form__form__input}
-      placeholder="+7 999 999 99 99"
+      placeholder="+390 68 702 8385"
       type="tel"
       {...register('phone', {
-        required: 'Введите телефон!',
+        required: 'Введіть телефон!',
         pattern: {
           value: /^\d*[1-9]\d*$/,
-          message: 'Недопустимое значение',
+          message: 'Некоректне значення',
         },
         minLength: 11,
         maxLength: 11,
@@ -22,10 +22,10 @@ const PhoneInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
       <span className={styles.error_alert}>{errors.phone?.message}</span>
     )}
     {errors.phone && errors.phone.type === 'minLength' && (
-      <span className={styles.error_alert}>Минимум 11 цифр!</span>
+      <span className={styles.error_alert}>Мінімум 11 цифр!</span>
     )}
     {errors.phone && errors.phone.type === 'maxLength' && (
-      <span className={styles.error_alert}>Не более 11 цифр!</span>
+      <span className={styles.error_alert}>Не більше ніж 11 цифр!</span>
     )}
   </label>
 )

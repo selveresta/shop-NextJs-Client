@@ -65,16 +65,16 @@ const PartPage = () => {
             <PartImagesList />
             <div className={styles.part__info}>
               <span className={`${styles.part__info__price} ${darkModeClass}`}>
-                {formatPrice(boilerPart.price || 0)} P
+                {formatPrice(boilerPart.price || 0)} ₴
               </span>
               <span className={styles.part__info__stock}>
                 {boilerPart.in_stock > 0 ? (
                   <span className={styles.part__info__stock__success}>
-                    Есть на складе
+                    Є на складі
                   </span>
                 ) : (
                   <span className={styles.part__info__stock__not}>
-                    Нет на складе
+                    Немає на складі
                   </span>
                 )}
               </span>
@@ -98,9 +98,9 @@ const PartPage = () => {
                       {isInCart ? <CartHoverCheckedSvg /> : <CartHoverSvg />}
                     </span>
                     {isInCart ? (
-                      <span>Добавлено в карзину</span>
+                      <span>Добавлено в кошик</span>
                     ) : (
-                      <span>Положить в корзину</span>
+                      <span>Покласти в кошик</span>
                     )}
                   </>
                 )}
@@ -144,7 +144,7 @@ const PartPage = () => {
         )}
         <div className={styles.part__bottom}>
           <h2 className={`${styles.part__title} ${darkModeClass}`}>
-            Вам понравится
+            Вам сподобається
           </h2>
           <DashboardSlider
             goToPartPage

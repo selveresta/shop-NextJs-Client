@@ -11,7 +11,7 @@ const OnlineStoreContent = () => (
     <li className={styles.footer__top__item__list__item}>
       <Link href="/shipping-payment" passHref legacyBehavior>
         <a className={styles.footer__top__item__list__item__link}>
-          Доставка и оплата
+          Доставка і оплата
         </a>
       </Link>
     </li>

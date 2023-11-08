@@ -21,51 +21,52 @@ const ContactsPage = ({ isWholesaleBuyersPage = false }) => {
             <div className={`${styles.contacts__list} ${darkModeClass}`}>
               <p>
                 <span>
-                  Условия оптовых заказов решаются индивидуально по телефону:{' '}
+                  Умови оптових замовлень вирішуються індивідуально за
+                  телефоном:{' '}
                 </span>
-                <span>+7 (555) 55-55-555</span>
+                <span>+380 68 702 8385</span>
               </p>
               <p>
-                Либо опишите суть заказа в форме обртной связи и мы с вами
-                свяжемся.
+                Або опишіть суть замовлення у формі зворотного зв&apos;язку і ми
+                зв&apos;яжемося з вами.
               </p>
             </div>
           ) : (
             <ul className={`${styles.contacts__list} ${darkModeClass}`}>
               <li className={styles.contacts__list__title}>
                 <h3 className={darkModeClass}>
-                  Магазин деталей для газовых котлов
+                  Магазин деталей для газових котлів
                 </h3>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
                 <span>Офис:</span>
-                <span> г. Москва, ул. ... д....</span>
+                <span> м. Київ, ул. ... д....</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
                 <span>Склад:</span>
-                <span> г. Москва, ул. ... д....</span>
+                <span> м. Київ, ул. ... д....</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
-                <span>График работы офиса:</span>
-                <span> пн-пс: с 8:00 до 22:00</span>
+                <span>Графік работи офіса:</span>
+                <span> пн-пн: с 8:00 до 22:00</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
-                <span>Наш контактный телефон:</span>
-                <span> +7(8095) 555-55-55</span>
+                <span>Наш контактний телефон:</span>
+                <span> +380 68 702 8385</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
                 <span>Время приемок завок:</span>
                 <span> Пн-Вс: с 8:00 до 22:00</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
-                <span>Прием заказов электронным способом на сайте:</span>
-                <span> круглосуточно</span>
+                <span>Прийом замовлень електронним способом на сайті:</span>
+                <span> цілодобово</span>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
                 <span>E-mail:</span>
                 <span className={styles.contacts__list__item__mail}>
                   {!isMobile560 && <MailSvg />}{' '}
-                  <span>info@zapchasti.com.ru</span>
+                  <span>info@zapchasti.com.ua</span>
                 </span>
               </li>
             </ul>

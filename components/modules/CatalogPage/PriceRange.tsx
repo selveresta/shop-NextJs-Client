@@ -27,7 +27,7 @@ const PriceRange = ({
         <input
           type="text"
           value={Math.ceil(priceRange[0])}
-          placeholder="от 00 000"
+          placeholder="від 00 000"
           readOnly
         />
         <span className={styles.filters__price__inputs__border} />

@@ -211,13 +211,13 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
     <section className={styles.catalog}>
       <div className={`container ${styles.catalog__container}`}>
         <h2 className={`${styles.catalog__title} ${darkModeClass}`}>
-          Каталог товаров
+          Каталог товарів
         </h2>
         <div className={`${styles.catalog__top} ${darkModeClass}`}>
           <AnimatePresence>
             {isAnyBoilerManufacturerChecked && (
               <ManufacturersBlock
-                title="Производитель котлов:"
+                title="Виробник котлів:"
                 event={updateBoilerManufacturer}
                 manufacturersList={boilerManufacturers}
               />
@@ -226,7 +226,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
           <AnimatePresence>
             {isAnyPartsManufacturerChecked && (
               <ManufacturersBlock
-                title="Производитель запчастей:"
+                title="Виробник запчастин:"
                 event={updatePartsManufacturer}
                 manufacturersList={partsManufacturers}
               />
@@ -238,7 +238,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
               disabled={resetFilterBtnDisabled}
               onClick={resetFilters}
             >
-              Сбросить фильтр
+              Скинути фільтр
             </button>
             <button
               className={styles.catalog__top__mobile_btn}
@@ -248,7 +248,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                 <FilterSvg />
               </span>
               <span className={styles.catalog__top__mobile_btn__text}>
-                Фильтр
+                Фільтр
               </span>
             </button>
             <FilterSelect setSpinner={setSpinner} />
@@ -288,7 +288,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                     <CatalogItem item={item} key={item.id} />
                   ))
                 ) : (
-                  <span>Список товаров пуст...</span>
+                  <span>Список товарів порожній...</span>
                 )}
               </ul>
             )}

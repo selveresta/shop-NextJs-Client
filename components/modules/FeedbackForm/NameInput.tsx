@@ -7,12 +7,12 @@ const NameInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
     <input
       className={styles.feedback_form__form__input}
       type="text"
-      placeholder="Иван"
+      placeholder="Іван"
       {...register('name', {
-        required: 'Введите Имя!',
+        required: "Введіть ім'я!",
         pattern: {
           value: /^[а-яА-Яa-zA-ZёЁ]*$/,
-          message: 'Недопустимое значение',
+          message: 'Некоректне значення',
         },
         minLength: 2,
         maxLength: 15,
@@ -22,10 +22,10 @@ const NameInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
       <span className={styles.error_alert}>{errors.name?.message}</span>
     )}
     {errors.name && errors.name.type === 'minLength' && (
-      <span className={styles.error_alert}>Минимум 2 символа!</span>
+      <span className={styles.error_alert}>Мінімум 2 символів!</span>
     )}
     {errors.name && errors.name.type === 'maxLength' && (
-      <span className={styles.error_alert}>Не более 15 символов!</span>
+      <span className={styles.error_alert}>Не більше ніж 15 символів!</span>
     )}
   </label>
 )

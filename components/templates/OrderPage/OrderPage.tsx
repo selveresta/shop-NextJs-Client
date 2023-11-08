@@ -86,7 +86,7 @@ const OrderPage = () => {
     <section className={styles.order}>
       <div className="container">
         <h2 className={`${styles.order__title} ${darkModeClass}`}>
-          Оформление заказа
+          Оформлення замовлення
         </h2>
         <div className={styles.order__inner}>
           <div className={styles.order__cart}>
@@ -97,12 +97,12 @@ const OrderPage = () => {
           </div>
           <div className={styles.order__pay}>
             <h3 className={`${styles.order__pay__title} ${darkModeClass}`}>
-              Итого
+              Разом
             </h3>
             <div className={`${styles.order__pay__inner} ${darkModeClass}`}>
               <div className={styles.order__pay__goods}>
                 <span>
-                  Товары (
+                  Товари (
                   {shoppingCart.reduce(
                     (defaultCount, item) => defaultCount + item.count,
                     0
@@ -112,9 +112,9 @@ const OrderPage = () => {
                 <span>{formatPrice(totalPrice)} P</span>
               </div>
               <div className={styles.order__pay__total}>
-                <span>На сумму</span>
+                <span>На суму</span>
                 <span className={darkModeClass}>
-                  {formatPrice(totalPrice)} P
+                  {formatPrice(totalPrice)} ₴
                 </span>
               </div>
               <button
@@ -141,8 +141,8 @@ const OrderPage = () => {
                   checked={agreement}
                 />
                 <span className={styles.order__pay__rights__text}>
-                  <strong>Согласен с условиями</strong> Правил пользования
-                  торговой площадкой и правилами возврата
+                  <strong>Погоджується з умовами</strong> Правил користування
+                  торговим майданчиком та правилами повернення
                 </span>
               </label>
             </div>

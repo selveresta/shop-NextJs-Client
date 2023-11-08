@@ -34,7 +34,7 @@ const CatalogItem = ({ item }: { item: IBoilerPart }) => {
           Артикул: {item.vendor_code}
         </span>
         <span className={styles.catalog__list__item__price}>
-          {formatPrice(item.price)} P
+          {formatPrice(item.price)} ₴
         </span>
       </div>
       <button
