@@ -14,7 +14,7 @@ const ContactsPage = ({ isWholesaleBuyersPage = false }) => {
     <section className={styles.contacts}>
       <div className="container">
         <h2 className={`${styles.contacts__title} ${darkModeClass}`}>
-          {isWholesaleBuyersPage ? 'Оптовым покупателям' : 'Контакты'}
+          {isWholesaleBuyersPage ? 'Оптовым покупателям' : 'Контакти'}
         </h2>
         <div className={styles.contacts__inner}>
           {isWholesaleBuyersPage ? (
@@ -35,7 +35,7 @@ const ContactsPage = ({ isWholesaleBuyersPage = false }) => {
             <ul className={`${styles.contacts__list} ${darkModeClass}`}>
               <li className={styles.contacts__list__title}>
                 <h3 className={darkModeClass}>
-                  Магазин деталей для газових котлів
+                  Магазин запчастин для газових котлів
                 </h3>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
