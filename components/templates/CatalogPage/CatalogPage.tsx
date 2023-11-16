@@ -39,7 +39,8 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
   const [priceRange, setPriceRange] = useState([1000, 9000])
   const [isFilterInQuery, setIsFilterInQuery] = useState(false)
   const [isPriceRangeChanged, setIsPriceRangeChanged] = useState(false)
-  const pagesCount = Math.ceil(boilerParts.count / 20)
+  const [pagesCount, setPagesCount] = useState<number>(1)
+
   const isValidOffset =
     query.offset && !isNaN(+query.offset) && +query.offset > 0
   const [currentPage, setCurrentPage] = useState(
@@ -63,8 +64,6 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
   useEffect(() => {
     loadBoilerParts()
   }, [filteredBoilerParts, isFilterInQuery])
-
-  console.log(boilerParts.rows)
 
   const loadBoilerParts = async () => {
     try {
@@ -94,7 +93,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
             undefined,
             { shallow: true }
           )
-
+          setPagesCount(Math.ceil(boilerParts.count / 20))
           setCurrentPage(0)
           setBoilerParts(isFilterInQuery ? filteredBoilerParts : data)
           return
